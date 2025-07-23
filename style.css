@@ -1,3 +1,6 @@
+/* Apply Comfortaa font site-wide */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body {
     font-family: 'Comfortaa', Arial, sans-serif;
     margin: 0;
@@ -20,33 +23,32 @@ body {
     object-fit: cover;
 }
 
-/* Navigation bar */
+/* Fixed navigation bar */
 nav {
-    font-family: 'Comfortaa', sans-serif;
     background: #f4f4f4;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
     position: fixed;
-    top: 200px; /* Positioned below the banner */
+    top: 200px; /* below the banner */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a {
-    margin: 0 20px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #5e4b8b; /* Soft purple */
-    font-size: 18px;
+    color: #333;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #88a27c; /* Sage green */
+    color: #88a27c; /* sage green */
 }
 
-/* Main content */
+/* Main content spacing */
 main {
     padding: 20px;
-    margin-top: 260px; /* Space for banner + nav bar */
+    margin-top: 260px; /* 200px banner + 60px nav */
 }
