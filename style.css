@@ -4,15 +4,14 @@ body {
     padding: 0;
     background: #ffffff;
     color: #333;
-    padding-top: 260px; /* 200px banner + 60px nav */
 }
 
+/* Banner section */
 .top-banner {
     width: 100%;
     height: 200px;
     overflow: hidden;
     background-color: #e0e0e0;
-    text-align: center;
 }
 
 .top-banner img {
@@ -21,13 +20,14 @@ body {
     object-fit: cover;
 }
 
+/* Navigation bar */
 nav {
     font-family: 'Comfortaa', sans-serif;
     background: #f4f4f4;
     padding: 10px 0;
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 200px; /* Positioned below the banner */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -36,15 +36,17 @@ nav {
 nav a {
     margin: 0 20px;
     text-decoration: none;
-    color: #5e4b8b;
+    color: #5e4b8b; /* Soft purple */
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #88a27c;
+    color: #88a27c; /* Sage green */
 }
 
+/* Main content */
 main {
     padding: 20px;
+    margin-top: 260px; /* Space for banner + nav bar */
 }
